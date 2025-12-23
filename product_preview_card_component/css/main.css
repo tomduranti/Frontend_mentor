@@ -6,6 +6,7 @@
   font-weight: 700;
   font-size: 2rem;
   line-height: 100%;
+  color: #1C232B;
 }
 
 .text_preset_2 {
@@ -20,6 +21,7 @@
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 160%;
+  color: #6C7289;
 }
 
 .text_preset_4 {
@@ -28,6 +30,7 @@
   font-size: 0.75rem;
   line-height: 120%;
   letter-spacing: 0.313rem;
+  color: #6C7289;
 }
 
 .text_preset_5 {
@@ -35,4 +38,34 @@
   font-weight: 500;
   font-size: 0.8125rem;
   line-height: 120%;
+}
+
+.page_wrapper {
+  background-color: #F2EAE2;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card__img {
+  width: 100%;
+  height: 342px;
+  max-width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__text {
+  padding: 2rem;
+}
+.card__text > :not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.card__text .card__product_category {
+  text-transform: uppercase;
 }
