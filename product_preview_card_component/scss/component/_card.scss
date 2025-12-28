@@ -49,3 +49,15 @@
         }
     }
 }
+
+/* BREAKPOINTS */
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        max-width: 600px;
+
+        &__img {
+            height: auto;
+        }
+    }
+}
