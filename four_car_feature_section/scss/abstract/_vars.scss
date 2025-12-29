@@ -3,6 +3,7 @@
 /* COLOR */
 $blue: #549EF2;
 $cyan: #44D3D2;
+$light_cyan: #83A6D2;
 $grey: (
     400: #6A7178,
     500: #4D4F62
@@ -38,9 +39,12 @@ $spacing: (
     200: 1rem,    // 16px
     250: 1.25rem,
     300: 1.5rem, //24px
+    375: 1.875rem, //30px
     400: 2rem,   //32px
     500: 2.5rem, //40px
     600: 3rem,
+    650: 3.5rem, //56px
+    675: 3.75rem, //60px
     800: 4rem,
     1000: 5rem,
 );
@@ -49,7 +53,7 @@ $spacing: (
 .text_preset_1 {
     font-family: $font_family;
     font-weight: map.get($fw, "semi_bold");
-    font-size: map.get($fs, 36);
+    font-size: map.get($fs, 24);
     line-height: 140%;
     letter-spacing: 0.016rem;
     color: map.get($grey, 500);
@@ -58,7 +62,7 @@ $spacing: (
 .text_preset_2 {
     font-family: $font_family;
     font-weight: map.get($fw, "extra_light");
-    font-size: map.get($fs, 36);
+    font-size: map.get($fs, 24);
     line-height: 140%;
     letter-spacing: 0.016rem;
     color: map.get($grey, 500);
@@ -77,6 +81,7 @@ $spacing: (
     font-weight: map.get($fw, "regular");
     font-size: map.get($fs, 15);
     line-height: 140%;
+    letter-spacing: 0.001rem;
     color: map.get($grey, 500);
 }
 
