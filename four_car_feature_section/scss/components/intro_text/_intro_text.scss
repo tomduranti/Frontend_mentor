@@ -3,8 +3,6 @@
 
 .intro_text {
     text-align: center;
-    width: 100%;
-    max-width: 19.75rem;
     margin: map.get(vars.$spacing, 650) auto map.get(vars.$spacing, 675);
 
     .intro_text__addition {

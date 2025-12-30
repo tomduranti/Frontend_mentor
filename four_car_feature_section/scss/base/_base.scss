@@ -1,0 +1,8 @@
+@use "../abstract/vars";
+@use "sass:map";
+
+.container {
+    width:100%;
+    max-width: 19.75rem;
+    margin: 0 auto;
+}
