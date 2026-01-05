@@ -9,3 +9,15 @@
         margin-bottom: map.get(vars.$spacing, 200);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .intro_text {
+        max-width: 33.75rem;
+        margin: map.get(vars.$spacing, 825) auto map.get(vars.$spacing, 1000);
+    }
+
+    .text_preset_2,
+    .text_preset_1 {
+        font-size: map.get(vars.$fs, 36);
+    }
+}
