@@ -10,9 +10,9 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
     .intro_text {
-        max-width: 33.75rem;
+        max-width: 33.75em;
         margin: map.get(vars.$spacing, 825) auto map.get(vars.$spacing, 1000);
     }
 
