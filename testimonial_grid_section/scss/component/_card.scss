@@ -1,0 +1,44 @@
+@use "sass:map";
+@use "../abstract/vars";
+
+.grid {
+    display: grid;
+    inline-size: 100%;
+    gap: map.get(vars.$spacing, 400);
+
+    &__container {
+        inline-size: 100%;
+        max-inline-size: 15.063em;
+        margin: map.get(vars.$spacing, 400);
+    }
+
+    &__item {
+        border-radius: .5em;
+        box-shadow: 40px 60px 50px map.get(vars.$grey, 500);
+        overflow: hidden;
+        transition: transform .3s ease;
+
+        &--job_offer {
+            background-color: map.get(vars.$purple, 500);
+            color: vars.$white;
+        }
+    }
+
+    &__avatar {
+        display: flex;
+        gap: map.get(vars.$spacing, 225);
+        margin-block-end: map.get(vars.$spacing, 200);
+
+        img {
+            inline-size: 28px;
+            block-size: 28px;
+            border-radius: 50%;
+            outline: 3px solid map.get(vars.$purple, 300);
+            box-shadow: 0 4px 4px vars.$black;
+        }
+    }
+
+    &__fullname {
+        margin-block-end: map.get(vars.$spacing, 50);
+    }
+}

@@ -1,0 +1,8 @@
+@use "sass:map";
+@use "../abstract/vars";
+
+.container {
+    inline-size: 100%;
+    max-inline-size: 19.063em;
+    margin: map.get(vars.$spacing, 825) map.get(vars.$spacing, 425);
+}

@@ -1,0 +1,72 @@
+/* COLOR */
+/* TYPOGRAPHY */
+/* UTILS */
+.text_preset_1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+.text_preset_2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 110%;
+}
+
+.text_preset_3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 140%;
+}
+
+.text_preset_4 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 0.688rem;
+  line-height: 110%;
+}
+
+.container {
+  inline-size: 100%;
+  max-inline-size: 19.063em;
+  margin: 4.625em 2.188em;
+}
+
+.grid {
+  display: grid;
+  inline-size: 100%;
+  gap: 2em;
+}
+.grid__container {
+  inline-size: 100%;
+  max-inline-size: 15.063em;
+  margin: 2em;
+}
+.grid__item {
+  border-radius: 0.5em;
+  box-shadow: 40px 60px 50px #48556A;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.grid__item--job_offer {
+  background-color: #733FC8;
+  color: #FFFFFF;
+}
+.grid__avatar {
+  display: flex;
+  gap: 1.063em;
+  margin-block-end: 1em;
+}
+.grid__avatar img {
+  inline-size: 28px;
+  block-size: 28px;
+  border-radius: 50%;
+  outline: 3px solid #A775F1;
+  box-shadow: 0 4px 4px #121212;
+}
+.grid__fullname {
+  margin-block-end: 0.25em;
+}
