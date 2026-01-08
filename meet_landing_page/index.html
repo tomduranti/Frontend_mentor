@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-
     <body>
         <header class="header">
             <img class="logo" src="assets/logo.svg" alt="company logo">
@@ -25,8 +23,8 @@
                     <div class="hero__text">
                         <h1 class="hero__heading text_preset_1">Group Chat <span class="text_breaker">for Everyone</span>
                         </h1>
-                        <p class="hero__subheading text_preset_4">Meet makes it easy to connect with others face-to-face
-                            virtually and collaborate across any device.</p>
+                        <h2 class="hero__subheading text_preset_4">Meet makes it easy to connect with others face-to-face
+                            virtually and collaborate across any device.</h2>
                         <div class="hero__cta_group">
                             <button class="button--cyan_600 text_preset_5" type="button">
                                 Download
@@ -44,21 +42,33 @@
                     </div>
                     <div class="grid">
                         <div class="grid__item">
-                            <img class="grid__img" src="assets/mobile/woman_in_videocall.jpg" alt="woman in videocall image">
+                            <picture>
+                                <source class="grid__img" srcset="assets/desktop/woman_in_videocall.jpg" media="(min-width: 48rem)">
+                                <img class="grid__img" src="assets/mobile/woman_in_videocall.jpg" alt="woman in videocall image">
+                            </picture>
                         </div>
                         <div class="grid__item">
-                            <img class="grid__img" src="assets/mobile/women_videochatting.jpg" alt="women videochatting image">
+                            <picture>
+                                <source class="grid__img" srcset="assets/desktop/women_videochatting.jpg" media="(min-width: 48rem)">
+                                <img class="grid__img" src="assets/mobile/women_videochatting.jpg" alt="women videochatting image">
+                            </picture>
                         </div>
                         <div class="grid__item">
-                            <img class="grid__img" src="assets/mobile/men_in_meeting.jpg" alt="men in meeting image">
+                            <picture>
+                                <source class="grid__img" srcset="assets/desktop/men_in_meeting.jpg" media="(min-width: 48rem)">
+                                <img class="grid__img" src="assets/mobile/men_in_meeting.jpg" alt="men in meeting image">
+                            </picture>
                         </div>
                         <div class="grid__item">
-                            <img class="grid__img" src="assets/mobile/man_texting.jpg" alt="man texting image">
+                            <picture>
+                                <source class="grid__img" srcset="assets/desktop/man_texting.jpg" media="(min-width: 48rem)">
+                                <img class="grid__img" src="assets/mobile/man_texting.jpg" alt="man texting image">
+                            </picture>
                         </div>
                     </div>
                     <div class="showcase__text">
-                        <h4 class="showcase__intro text_preset_3">Built for modern use</h4>
-                        <h5 class="showcase__slogan text_preset_2">Smarter meetings, all in one place</h5>
+                        <h3 class="showcase__intro text_preset_3">Built for modern use</h3>
+                        <h4 class="showcase__slogan text_preset_2">Smarter meetings, all in one place</h4>
                         <p class="shocase__paragraph text_preset_4">Send messages, share files, show your screen, and record
                             your meetings — all in one workspace. Control who can join with invite-only team access, data
                             encryption, and data export.</p>
@@ -66,8 +76,6 @@
                 </div>
             </section>
         </main>
-
         <footer></footer>
     </body>
-
 </html>
