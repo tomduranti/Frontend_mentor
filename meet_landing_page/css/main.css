@@ -56,6 +56,12 @@ body {
   text-align: center;
 }
 
+.section_img {
+  display: flex;
+  justify-content: center;
+  margin-block-end: 3rem;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -67,9 +73,8 @@ body {
   margin-block-start: 3rem;
 }
 
-.hero__img {
-  margin-block-end: 3rem;
-  max-inline-size: 100%;
+.hero {
+  margin-block-end: 4rem;
 }
 .hero .text_breaker {
   display: block;

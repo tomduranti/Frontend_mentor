@@ -2,10 +2,7 @@
 @use "sass:map";
 
 .hero {
-    &__img {
-        margin-block-end: map.get(vars.$spacing, 600);
-        max-inline-size: 100%;
-    }
+    margin-block-end: map.get(vars.$spacing, 800);
 
     .text_breaker {
         display: block;

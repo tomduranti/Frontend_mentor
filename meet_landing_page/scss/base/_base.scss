@@ -1,3 +1,6 @@
+@use "../abstract/vars";
+@use "sass:map";
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,4 +12,10 @@ body {
     max-inline-size: 19.063em;
     margin: 0 auto;
     text-align: center;
+}
+
+.section_img {
+  display: flex;
+  justify-content: center;
+  margin-block-end: map.get(vars.$spacing, 600);
 }
