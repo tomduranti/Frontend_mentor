@@ -188,6 +188,13 @@ body {
   color: #FAFAFA;
   background-color: #4D96A9;
   padding: 1rem 2.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button--cyan_600:hover {
+  background-color: #71C0D4;
+}
+.button--cyan_600:active {
+  transform: scale(0.99);
 }
 
 .button--purple_600 {
@@ -195,4 +202,11 @@ body {
   color: #FAFAFA;
   background-color: #855FB1;
   padding: 1rem 2.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button--purple_600:hover {
+  background-color: #B18BDD;
+}
+.button--purple_600:active {
+  transform: scale(0.99);
 }
