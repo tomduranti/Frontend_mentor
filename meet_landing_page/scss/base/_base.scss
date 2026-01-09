@@ -1,4 +1,5 @@
 @use "../abstract/vars";
+@use "../abstract/utils";
 @use "sass:map";
 
 body {
@@ -8,18 +9,25 @@ body {
 }
 
 .container {
-    inline-size: 100%;
-    max-inline-size: 19.438em;
-    margin: 0 auto;
-    text-align: center;
+  position: relative;
+  inline-size: 100%;
+  max-inline-size: 19.438em;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section_img {
   display: flex;
   justify-content: center;
   margin-block-end: map.get(vars.$spacing, 600);
-}
 
-.section_img--large-bottom {
-  margin-block-end: map.get(vars.$spacing, 800);
+  &--large-bottom {
+    margin-block-end: map.get(vars.$spacing, 800);
+  }
+
+  &--neg_bottom {
+    position: relative;
+    z-index: 2;
+    margin-block-end: -28px;
+  }
 }

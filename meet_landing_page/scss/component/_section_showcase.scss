@@ -22,7 +22,7 @@
 .showcase {
 
     &__text {
-        margin-block-end: map.get(vars.$spacing, 400);
+        margin-block-end: map.get(vars.$spacing, 800);
     }
 
     &__intro {
@@ -32,7 +32,6 @@
     }
 
     &__slogan {
-        color: map.get(vars.$slate, 900);
         margin-block-end: map.get(vars.$spacing, 400);
     }
 }

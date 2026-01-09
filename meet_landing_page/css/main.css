@@ -1,6 +1,5 @@
 /* COLOR */
 /* TYPOGRAPHY */
-/* UTILS */
 .text_preset_1 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
@@ -9,11 +8,19 @@
   color: #28283D;
 }
 
-.text_preset_2 {
+.text_preset_2--white, .text_preset_2--dark_blue {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
   font-size: 2rem;
   line-height: 110%;
+}
+
+.text_preset_2--dark_blue {
+  color: #28283D;
+}
+
+.text_preset_2--white {
+  color: #FAFAFA;
 }
 
 .text_preset_3 {
@@ -24,12 +31,20 @@
   letter-spacing: 0.25rem;
 }
 
-.text_preset_4 {
+.text_preset_4--white, .text_preset_4--slate {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 140%;
+}
+
+.text_preset_4--slate {
   color: #87879D;
+}
+
+.text_preset_4--white {
+  line-height: 150%;
+  color: #FAFAFA;
 }
 
 .text_preset_5 {
@@ -43,6 +58,10 @@
   color: #8FE3F9;
 }
 
+.color_purple_300 {
+  color: #D9B8FF;
+}
+
 .margin_left--2 {
   margin-inline-start: 0.156rem;
 }
@@ -54,6 +73,7 @@ body {
 }
 
 .container {
+  position: relative;
   inline-size: 100%;
   max-inline-size: 19.438em;
   margin: 0 auto;
@@ -65,9 +85,13 @@ body {
   justify-content: center;
   margin-block-end: 3rem;
 }
-
 .section_img--large-bottom {
   margin-block-end: 4rem;
+}
+.section_img--neg_bottom {
+  position: relative;
+  z-index: 2;
+  margin-block-end: -28px;
 }
 
 .header {
@@ -118,7 +142,7 @@ body {
 }
 
 .showcase__text {
-  margin-block-end: 2rem;
+  margin-block-end: 4rem;
 }
 .showcase__intro {
   text-transform: uppercase;
@@ -126,8 +150,37 @@ body {
   margin-block-end: 1rem;
 }
 .showcase__slogan {
-  color: #28283D;
   margin-block-end: 2rem;
+}
+
+.footer__bg {
+  min-height: 45.3vh;
+  position: relative;
+  background-color: #4D96A9;
+  background-image: url("../../assets/mobile/footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer__bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #4D96A9;
+  opacity: 0.9;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.footer__text {
+  position: absolute;
+  z-index: 2;
+  top: 4rem;
+}
+.footer__slogan, .footer__paragraph {
+  margin-block-end: 1.5rem;
 }
 
 .button--cyan_600 {
