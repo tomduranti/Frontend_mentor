@@ -2,18 +2,24 @@
 @use "sass:map";
 
 @mixin button--mod($bg_color, $bg_hover) {
-    border-radius: 29px;
+    border-radius: 1.813rem;
     color: vars.$white;
     background-color: $bg_color;
     padding: map.get(vars.$spacing, 200) map.get(vars.$spacing, 500);
+    -webkit-transition: background-color .3s ease, -webkit-transform .2s ease;
+    transition: background-color .3s ease, -webkit-transform .2s ease;
+    -o-transition: background-color .3s ease, transform .2s ease;
     transition: background-color .3s ease, transform .2s ease;
+    transition: background-color .3s ease, transform .2s ease, -webkit-transform .2s ease;
 
     &:hover {
         background-color: $bg_hover;
     }
     
     &:active {
-        transform: scale(.99);
+        -webkit-transform: scale(.99);
+            -ms-transform: scale(.99);
+                transform: scale(.99);
     }
 }
 

@@ -63,7 +63,7 @@
 }
 
 .margin_left--2 {
-  margin-inline-start: 0.156rem;
+  margin-inline-start: 0.155rem;
 }
 
 body {
@@ -184,7 +184,7 @@ body {
 }
 
 .button--cyan_600 {
-  border-radius: 29px;
+  border-radius: 1.813rem;
   color: #FAFAFA;
   background-color: #4D96A9;
   padding: 1rem 2.5rem;
@@ -198,7 +198,7 @@ body {
 }
 
 .button--purple_600 {
-  border-radius: 29px;
+  border-radius: 1.813rem;
   color: #FAFAFA;
   background-color: #855FB1;
   padding: 1rem 2.5rem;
