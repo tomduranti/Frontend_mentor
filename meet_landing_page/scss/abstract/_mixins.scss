@@ -5,7 +5,7 @@
 
 @mixin text_preset($font_family, $font_size, $font_weight, $line_height: null, $letter_spacing: 0, $color: null) {
     font-family: t.$font_family;
-    font-size: map.get(t.$fs, $font_size);
+    font-size: $font_size;
     font-weight: map.get(t.$fw, $font_weight);
     line-height: $line_height;
     letter-spacing: $letter_spacing;

@@ -10,6 +10,23 @@
 
     &__item {
         inline-size: 9.219rem;
+        -webkit-transition: -webkit-transform .2s ease;
+        transition: -webkit-transform .2s ease;
+        -o-transition: transform .2s ease;
+        transition: transform .2s ease;
+        transition: transform .2s ease, -webkit-transform .2s ease;
+
+        @media (prefers-reduced-motion: reduce) {
+            -webkit-transition: none;
+            -o-transition: none;
+            transition: none;
+        }
+
+        &:hover {
+            -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                    transform: scale(1.1);
+        }
     }
 
     &__img {

@@ -11,7 +11,7 @@ body {
 .container {
   position: relative;
   inline-size: 100%;
-  max-inline-size: get.map(v.$container, mobile);
+  max-inline-size: map.get(v.$container, mobile);
   margin: 0 auto;
   text-align: center;
 }
