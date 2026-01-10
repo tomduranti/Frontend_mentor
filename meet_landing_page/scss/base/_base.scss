@@ -1,6 +1,5 @@
 @use "../abstract/mixins" as m;
-@use "../abstract/spacing";
-@use "../abstract/utils";
+@use "../abstract/vars" as v;
 @use "sass:map";
 
 body {
@@ -12,7 +11,7 @@ body {
 .container {
   position: relative;
   inline-size: 100%;
-  max-inline-size: 19.438rem;
+  max-inline-size: get.map(v.$container, mobile);
   margin: 0 auto;
   text-align: center;
 }
