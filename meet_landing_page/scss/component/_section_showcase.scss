@@ -1,9 +1,15 @@
 @use "../abstract/color" as c;
 @use "../abstract/mixins" as m;
+@use "../abstract/vars" as v;
 @use "sass:map";
+
+.showcase {
+    @include m.spacing(margin-block-end, 800);
+}
 
 .grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, 9.219rem);
     @include m.spacing(gap, 200);
     @include m.spacing(margin-block-end, 800);
@@ -40,7 +46,10 @@
 .showcase {
 
     &__text {
-        @include m.spacing(margin-block-end, 800);
+        @media screen and (min-width: map.get(v.$breakpoint, tablet)) {
+            margin:0 auto;
+            max-inline-size: 31.5rem;
+        }
     }
 
     &__intro {
@@ -51,5 +60,10 @@
 
     &__slogan {
         @include m.spacing(margin-block-end, 400);
+        @media screen and (min-width: map.get(v.$breakpoint, tablet)) {
+            margin:0 auto;
+            max-inline-size: 27.813rem;
+            @include m.spacing(margin-block-end, 400);
+        }
     }
 }

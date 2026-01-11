@@ -12,8 +12,12 @@ body {
   position: relative;
   inline-size: 100%;
   max-inline-size: map.get(v.$container, mobile);
+  min-height: inherit;
   margin: 0 auto;
   text-align: center;
+  @media screen and (min-width: map.get(v.$breakpoint, tablet)) {
+      max-inline-size: 31.5rem;
+  }
 }
 
 .section_img {
@@ -21,7 +25,7 @@ body {
   justify-content: center;
   @include m.spacing(margin-block-end, 600);
 
-  &--large-bottom {
+  &--large_bottom {
     @include m.spacing(margin-block-end, 800);
   }
 

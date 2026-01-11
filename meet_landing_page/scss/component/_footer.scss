@@ -1,5 +1,6 @@
 @use "../abstract/color" as c;
 @use "../abstract/mixins" as m;
+@use "../abstract/vars" as v;
 @use "sass:map";
 
 .footer {
@@ -12,6 +13,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        @media screen and (min-width: map.get(v.$breakpoint, tablet)) {
+            min-height: 32vh;
+        }
 
         &::after {
             content: "";
